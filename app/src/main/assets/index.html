@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reshme - Namma Pride</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Reshme <span class="highlight">Namma Pride</span></h1>
+            <p>Smart Sericulture Monitoring</p>
+        </header>
+
+        <main>
+            <!-- Dashboard Section -->
+            <section id="dashboard" class="card status-Green">
+                <div class="card-header">
+                    <h2>Current Status</h2>
+                    <span id="color-indicator" class="badge">Safe</span>
+                </div>
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="label">Active Batch</span>
+                        <span class="value" id="batch-breed">No Active Batch</span>
+                        <span class="subtext" id="batch-date">--</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Silkworm Stage</span>
+                        <span class="value" id="batch-stage">--</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Temperature</span>
+                        <span class="value" id="climate-temp">--°C</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Humidity</span>
+                        <span class="value" id="climate-hum">--%</span>
+                    </div>
+                </div>
+
+                <div class="advice-box">
+                    <h3 class="label">AI Advice</h3>
+                    <p id="advice-text">Start a new batch to get started.</p>
+                </div>
+
+                <div class="alerts-box" id="alerts-container">
+                    <!-- Alerts will be injected here -->
+                </div>
+
+                <button class="btn btn-primary" id="btn-advance-stage" disabled>Advance Stage</button>
+            </section>
+
+            <!-- Actions Section -->
+            <div class="actions-grid">
+                <!-- Log Climate Card -->
+                <section class="card action-card">
+                    <h2>Log Climate</h2>
+                    <form id="climate-form">
+                        <div class="input-group">
+                            <label for="temp-input">Temperature (°C)</label>
+                            <input type="number" id="temp-input" min="10" max="45" step="0.1" required placeholder="e.g. 25.5">
+                        </div>
+                        <div class="input-group">
+                            <label for="hum-input">Humidity (%)</label>
+                            <input type="number" id="hum-input" min="40" max="95" step="0.1" required placeholder="e.g. 75">
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Save Reading</button>
+                    </form>
+                </section>
+
+                <!-- New Batch Card -->
+                <section class="card action-card">
+                    <h2>New Batch</h2>
+                    <form id="batch-form">
+                        <div class="input-group">
+                            <label for="breed-select">Silkworm Breed</label>
+                            <select id="breed-select" required>
+                                <option value="" disabled selected>Select Breed</option>
+                                <option value="Bivoltine">Bivoltine</option>
+                                <option value="Multivoltine">Multivoltine</option>
+                                <option value="Crossbreed">Crossbreed</option>
+                            </select>
+                        </div>
+                        <p class="warning-text">Starting a new batch overwrites the current one.</p>
+                        <button type="submit" class="btn btn-danger">Start Batch</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

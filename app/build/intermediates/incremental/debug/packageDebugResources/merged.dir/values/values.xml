@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ReshmeApp" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@android:color/holo_green_dark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+</resources>
