@@ -3,7 +3,7 @@
 
 An AI-powered Android application developed using Kotlin and GenAI to support sericulture farmers by monitoring silkworm rearing conditions and providing smart climate guidance.
 
----
+--
 
 ## 📌 Project Overview
 
