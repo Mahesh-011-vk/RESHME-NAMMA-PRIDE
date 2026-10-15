@@ -24,7 +24,7 @@ The application provides:
 - Rearing guidance
 - Harvest reminders
 
----
+--
 
 ## ✨ Key Features
 
