@@ -96,7 +96,7 @@ Stores and tracks climate records and batch details for better monitoring.
 ## 👨‍💻 Developer
 
 Mahesh  
-Android App Developer | GenAI Enthusiast
+Android App Developer | GenAI Enthusiast | AIML Engineer
 
 GitHub:
 https://github.com/Mahesh-011-vk
