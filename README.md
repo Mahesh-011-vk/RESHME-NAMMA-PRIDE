@@ -3,7 +3,7 @@
 
 An AI-powered Android application developed using Kotlin and GenAI to support sericulture farmers by monitoring silkworm rearing conditions and providing smart climate guidance.
 
---
+---
 
 ## 📌 Project Overview
 
@@ -11,7 +11,7 @@ Karnataka is known as the silk capital of India, where silkworm farming plays a 
 
 RESHME – NAMMA PRIDE acts as a digital “Sericulture Guard” that helps farmers manually track environmental conditions and receive intelligent recommendations for maintaining ideal silkworm growth conditions.
 
---
+---
 
 ## 🎯 Objective
 
@@ -24,7 +24,7 @@ The application provides:
 - Rearing guidance
 - Harvest reminders
 
---
+---
 
 ## ✨ Key Features
 
